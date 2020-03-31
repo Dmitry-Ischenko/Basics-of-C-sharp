@@ -1,0 +1,6 @@
+D:\github.com\Basics-of-C-sharp\lesson2\task2\bin\Debug\task2.exe.config
+D:\github.com\Basics-of-C-sharp\lesson2\task2\bin\Debug\task2.exe
+D:\github.com\Basics-of-C-sharp\lesson2\task2\bin\Debug\task2.pdb
+D:\github.com\Basics-of-C-sharp\lesson2\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
+D:\github.com\Basics-of-C-sharp\lesson2\task2\obj\Debug\task2.exe
+D:\github.com\Basics-of-C-sharp\lesson2\task2\obj\Debug\task2.pdb
