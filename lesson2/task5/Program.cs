@@ -23,6 +23,7 @@ class Program
         float ur_height = (float)GetInt("Введите ваш рост(см):")/100;
         float ur_weight = GetInt("Введите ваш вес (кг):");
         float indexIMT = ur_weight / (ur_height * ur_height);
+        float needweight = Math.Abs(ur_weight - (22 * ur_height * ur_height));
         //Индекс массы тела Соответствие между массой человека и его ростом
         //16 и менее  Выраженный дефицит массы тела
         //16—18,5 Недостаточная(дефицит) масса тела
@@ -34,11 +35,11 @@ class Program
         Console.Write($"Ваш индекс массы тела равен (ИМТ) {indexIMT}");
         if (indexIMT <= 16)
         {
-            Console.WriteLine(" - это выраженный дефицит массы тела. Рекомендуется набрать вес на " + Math.Abs(ur_weight-(22*ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это выраженный дефицит массы тела. Рекомендуется набрать вес на " + needweight + "кг");
         }
         else if (indexIMT <= 18.5)
         {
-            Console.WriteLine(" - это Недостаточная(дефицит) масса тела. Рекомендуется набрать вес на " + Math.Abs(ur_weight - (22 * ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это Недостаточная(дефицит) масса тела. Рекомендуется набрать вес на " + needweight + "кг");
         }
         else if (indexIMT <= 24.99)
         {
@@ -46,19 +47,19 @@ class Program
         }
         else if (indexIMT <= 30)
         {
-            Console.WriteLine(" - это Избыточная масса тела. Рекомендуется сбросить вес на " + Math.Abs(ur_weight - (22 * ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это Избыточная масса тела. Рекомендуется сбросить вес на " + needweight + "кг");
         }
         else if (indexIMT <= 35)
         {
-            Console.WriteLine(" - это Ожирение. Рекомендуется сбросить вес на " + Math.Abs(ur_weight - (22 * ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это Ожирение. Рекомендуется сбросить вес на " + needweight + "кг");
         }
         else if (indexIMT <= 40)
         {
-            Console.WriteLine(" - это Ожирение резкое. Рекомендуется сбросить вес на " + Math.Abs(ur_weight - (22 * ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это Ожирение резкое. Рекомендуется сбросить вес на " + needweight + "кг");
         }
         else
         {
-            Console.WriteLine(" - это Очень резкое ожирение. Рекомендуется сбросить вес на " + Math.Abs(ur_weight - (22 * ur_height * ur_height)) + "кг");
+            Console.WriteLine(" - это Очень резкое ожирение. Рекомендуется сбросить вес на " + needweight + "кг");
         }
         Console.ReadKey();
     }

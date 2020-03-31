@@ -2,6 +2,26 @@
 
 class Program
 {
+    static Boolean CheckPass(string login, string password)
+    {
+        string secretLogin = "root";
+        string secretPassword = "GeekBrains";
+        if (login == secretLogin)
+        {
+            if (password == secretPassword)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
     static void Main(string[] args)
     {
         //Выполнил Дмитрий Ищенко
@@ -10,8 +30,6 @@ class Program
         //пользователь вводит логин и пароль, программа пропускает его дальше или не пропускает. С помощью цикла do while ограничить 
         //ввод пароля тремя попытками.
         Console.WriteLine("4. Реализовать метод проверки логина и пароля.");
-        string secretLogin = "root";
-        string secretPassword = "GeekBrains";
         int userTry= 0;
         do
         {
@@ -25,23 +43,18 @@ class Program
             string login = Console.ReadLine();
             Console.Write("Введите пароль:");
             string password = Console.ReadLine();
-            userTry++;
-            if (login == secretLogin)
+            if (CheckPass(login, password))
             {
-                if (password == secretPassword)
-                {
-                    break;
-                } else
-                {
-                    Console.WriteLine("Комбинация логин/пароль не верные");
-                }
-            }else
+                break;
+            }
+            else
             {
                 Console.WriteLine("Комбинация логин/пароль не верные");
             }
-    }
+            userTry++;
+        }
         while (true);
-        Console.WriteLine($"Добро пожаловать {secretLogin}!");
+        Console.WriteLine("Добро пожаловать !");
         Console.ReadKey();
     }
 }
