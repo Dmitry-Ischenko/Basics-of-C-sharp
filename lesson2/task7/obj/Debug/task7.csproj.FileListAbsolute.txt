@@ -1,0 +1,7 @@
+D:\github.com\Basics-of-C-sharp\lesson2\task7\obj\Debug\task7.csprojAssemblyReference.cache
+D:\github.com\Basics-of-C-sharp\lesson2\task7\obj\Debug\task7.csproj.CoreCompileInputs.cache
+D:\github.com\Basics-of-C-sharp\lesson2\task7\bin\Debug\task7.exe.config
+D:\github.com\Basics-of-C-sharp\lesson2\task7\bin\Debug\task7.exe
+D:\github.com\Basics-of-C-sharp\lesson2\task7\bin\Debug\task7.pdb
+D:\github.com\Basics-of-C-sharp\lesson2\task7\obj\Debug\task7.exe
+D:\github.com\Basics-of-C-sharp\lesson2\task7\obj\Debug\task7.pdb
