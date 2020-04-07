@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CE5F19A-B7D9-4F88-9970-674C06996265}</ProjectGuid>
+    <ProjectGuid>{FEF49183-66C9-4101-87D4-15198C5FDEB3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>task3</RootNamespace>
-    <AssemblyName>task3</AssemblyName>
+    <RootNamespace>task5</RootNamespace>
+    <AssemblyName>task5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -41,12 +41,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="task3.library">
-      <HintPath>..\task3.library\bin\Debug\task3.library.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoolArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
