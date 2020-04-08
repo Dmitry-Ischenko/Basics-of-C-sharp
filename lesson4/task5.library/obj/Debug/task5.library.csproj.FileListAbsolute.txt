@@ -1,0 +1,5 @@
+D:\github.com\Basics-of-C-sharp\lesson4\task5.library\bin\Debug\task5.library.dll
+D:\github.com\Basics-of-C-sharp\lesson4\task5.library\bin\Debug\task5.library.pdb
+D:\github.com\Basics-of-C-sharp\lesson4\task5.library\obj\Debug\task5.library.csproj.CoreCompileInputs.cache
+D:\github.com\Basics-of-C-sharp\lesson4\task5.library\obj\Debug\task5.library.dll
+D:\github.com\Basics-of-C-sharp\lesson4\task5.library\obj\Debug\task5.library.pdb

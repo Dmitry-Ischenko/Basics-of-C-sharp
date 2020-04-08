@@ -4,3 +4,7 @@ D:\github.com\Basics-of-C-sharp\lesson4\task5\bin\Debug\task5.pdb
 D:\github.com\Basics-of-C-sharp\lesson4\task5\obj\Debug\task5.csproj.CoreCompileInputs.cache
 D:\github.com\Basics-of-C-sharp\lesson4\task5\obj\Debug\task5.exe
 D:\github.com\Basics-of-C-sharp\lesson4\task5\obj\Debug\task5.pdb
+D:\github.com\Basics-of-C-sharp\lesson4\task5\obj\Debug\task5.csprojAssemblyReference.cache
+D:\github.com\Basics-of-C-sharp\lesson4\task5\bin\Debug\task5.library.dll
+D:\github.com\Basics-of-C-sharp\lesson4\task5\bin\Debug\task5.library.pdb
+D:\github.com\Basics-of-C-sharp\lesson4\task5\obj\Debug\task5.csproj.CopyComplete
