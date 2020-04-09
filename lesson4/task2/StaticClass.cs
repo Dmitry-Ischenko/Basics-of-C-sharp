@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-class SuperClass
+static class StaticClass
 {
     public static int GetCount(int [] array)
     {
@@ -26,35 +26,55 @@ class SuperClass
         }
         return count;
     }
-    public static int  GetCountInFile(string path)
+    public static int[] GetCountInFile(string path)
     {
+        int[] array;
         if (!File.Exists(path))
         {
-            return 0;
+            return StaticClass.FillArray(out array);
         }
         try
         {
             string[] arrayStr = File.ReadAllLines(path);
-            int[] array = new int[arrayStr.Length];
-            for (int i = 0; i < array.Length; i++)
+            int row = 0;
+            for (int i = 0; i < arrayStr.Length; i++)
             {
-                if (!Int32.TryParse(arrayStr[i], out array[i]))
+                if (arrayStr[i].Length>0)
                 {
-                    array[i] = 0;
+                    row++;
                 }
             }
-            return GetCount(array);
+            array = new int[row];
+            int z = 0;
+            for (int i = 0; i < arrayStr.Length; i++)
+            {
+                if (Int32.TryParse(arrayStr[i], out array[z]))
+                {
+                    z++;
+                }
+            }
+            return array;
         }
         catch (DirectoryNotFoundException e)
         {
             Console.WriteLine(e.Message);
-            return 0;
+            return StaticClass.FillArray(out array);
         }
         catch (Exception e)
         {
             Console.WriteLine(e.Message);
-            return 0;
+            return StaticClass.FillArray(out array);
         }
+    }
+    public static int[] FillArray(out int[] array,int randMin= -10000, int randMax= 10000, int row=20)
+    {
+        Random random = new Random();
+        array = new int[row];
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = random.Next(randMin, randMax);
+        }
+        return array;
     }
 }
 

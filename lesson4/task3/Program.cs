@@ -21,7 +21,7 @@ class Program
         myArray.Print();
         Console.WriteLine("Сумма элементов массива равна: {0}", myArray.Sum);
         CoolArray myArrayInverse = myArray.Inverse;
-        Console.WriteLine("Мы создали новый объек");
+        Console.WriteLine("Мы создали новый объект");
         myArrayInverse.Print();
         myArray.Multi(7);
         Console.WriteLine("а теперь перемножили");
@@ -38,7 +38,7 @@ class Program
         myArrayDll.Print();
         Console.WriteLine("Сумма элементов массива равна: {0}", myArrayDll.Sum);
         CoolArrayDll myArrayInverseDll = myArrayDll.Inverse;
-        Console.WriteLine("Мы создали новый объек");
+        Console.WriteLine("Мы создали новый объект");
         myArrayInverseDll.Print();
         myArrayDll.Multi(7);
         Console.WriteLine("а теперь перемножили");

@@ -14,17 +14,19 @@ class Program
         int arrayLength = 20;
         string path = "data.txt";
         //-------------------------
-        int[] a = new int[arrayLength];
-        Random random = new Random();
-        for (int i = 0; i < a.Length; i++)
-        {
-            a[i] = random.Next(randMin, randMax);
-        }
+        int[] a;
+        StaticClass.FillArray(out a,randMin, randMax, arrayLength);
         Console.WriteLine("а) Класс должен содержать статический метод, который принимает на вход массив и решает задачу 1:\n");
-        Console.Write(" ответ - {0}\n", SuperClass.GetCount(a));
+        Console.Write(" ответ - {0}\n", StaticClass.GetCount(a));
         Console.WriteLine("\nб) *Добавьте статический метод для считывания массива из текстового файла. Метод должен возвращать массив целых чисел;\n" +
             "в)**Добавьте обработку ситуации отсутствия файла на диске.\n");
-        Console.Write(" ответ - {0}\n", SuperClass.GetCountInFile(path));
+        //Console.Write(" ответ - {0}\n", StaticClass.GetCountInFile(path));
+        int[] b = StaticClass.GetCountInFile(path);
+        for (int i=0;i<b.Length;i++)
+        {
+            Console.WriteLine("[{0}]={1}",i,b[i]);
+        }
+        Console.Write(" ответ - {0}\n", StaticClass.GetCount(b));
         Console.ReadKey();
     }
 }
