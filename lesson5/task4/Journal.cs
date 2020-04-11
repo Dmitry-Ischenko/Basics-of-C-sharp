@@ -35,26 +35,14 @@ class Journal
     }
     public int this[int index]
     {
+        get
+        {
+            return gradesPrivate[index];
+        }
+        set
+        {
+            gradesPrivate[index] = value;
+        }
     }
-    //public int[] grades
-    //{
-    //    get
-    //    {
-    //        return gradesPrivate;
-    //    }
-    //    set
-    //    {
-    //        gradesPrivate = value;
-    //    }
-    //}
-    //public int grades[int index] {
-
-    //public int grades[int index]
-    //{
-    //    get
-    //    {
-    //        return gradesPrivate[index];
-    //    }
-    //}
 }
 
