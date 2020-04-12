@@ -29,15 +29,20 @@ class Program
                 if (userAnswer.ToLower().Equals(a.GetAnswer.ToLower()))
                 {
                     usrAnsCoun++;
-                    Console.WriteLine("\nИ это правильный ответ!Вы ответили правильно на {0} вопросов(а)!\n",usrAnsCoun);
+                    Console.WriteLine("\nИ это правильный ответ!Вы ответили правильно на {0} вопрос(а/ов)!\n", usrAnsCoun);
                 }
                 else
                 {
-                    Console.WriteLine("Не, это неверно. Вы ответили правильно на {0} вопроса(ов)", usrAnsCoun);
+                    Console.WriteLine("Не, это неверно. Вы ответили правильно на {0} вопрос(а/ов)", usrAnsCoun);
                 }
             }
+            if (a.QuestionCount==0)
+            {
+                Console.WriteLine("Вопросы закончились(");
+                exit=2;
+            }
         } while (exit !=2);
-        Console.WriteLine("Игра кончена. Вы ответили правильно на {0} вопроса(ов)", usrAnsCoun);
+        Console.WriteLine("Игра кончена. Вы ответили правильно на {0} вопрос(а/ов)", usrAnsCoun);
         Console.ReadKey();
     }
 }
@@ -91,7 +96,7 @@ class Question
     {
         get
         {
-            if (iniinitialization == 1) { 
+            if (iniinitialization == 1 && questionLengh>0) { 
                 string answer = question[index[getQuestion], 1];
                 index[getQuestion] = index[questionLengh-1];
                 index[questionLengh-1] = 0;
@@ -101,6 +106,13 @@ class Question
             { 
                 return "Для начала задайте вопрос, чтоле";
             }
+        }
+    }
+    public int QuestionCount
+    {
+        get
+        {
+            return questionLengh;
         }
     }
 }
