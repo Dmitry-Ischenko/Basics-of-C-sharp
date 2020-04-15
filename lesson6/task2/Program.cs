@@ -45,7 +45,6 @@ class Program
         } while (true);
         double a;
         double b;
-        int min;
         do
         {
             Console.WriteLine("Укажите начало (А) и конец (B) поиска функции");
