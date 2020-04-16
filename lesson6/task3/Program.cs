@@ -58,13 +58,6 @@ class Program
             }
         }
         Console.WriteLine("Количество студентов в возсрасте от 18 до 20: {0}",studentDAge);
-        //parts.Sort(delegate (Part x, Part y)
-        //{
-        //    if (x.PartName == null && y.PartName == null) return 0;
-        //    else if (x.PartName == null) return -1;
-        //    else if (y.PartName == null) return 1;
-        //    else return x.PartName.CompareTo(y.PartName);
-        //});
         Console.WriteLine("До сортировки по возрасту:");
         Console.WriteLine("----------------------------");
         foreach (var v in list) Console.WriteLine(v.Age);
@@ -100,41 +93,5 @@ class Program
     {
 
         return String.Compare(st1.firstName, st2.firstName);          // Сравниваем две строки
-    }
-}
-class Student
-{
-    public string lastName;
-    public string firstName;
-    public string university;
-    public string faculty;
-    public int course;
-    public string department;
-    public int group;
-    public string city;
-    int age;
-    // Создаем конструктор
-    public Student(string firstName, string lastName, string university, string faculty, string department, int age, int course, int group, string city)
-    {
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.university = university;
-        this.faculty = faculty;
-        this.department = department;
-        this.course = course;
-        this.age = age;
-        this.group = group;
-        this.city = city;
-    }
-    public override string ToString()
-    {
-        return $"{firstName} {lastName}; Университет: {university}; Факультет: {faculty}; Департамент: {department};Курс: {course}; Возраст: {Age}; Группа: {group}; Город: {city}";
-    }
-    public int Age
-    {
-        get
-        {
-            return age;
-        }
     }
 }
