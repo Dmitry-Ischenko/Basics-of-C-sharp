@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace task1
@@ -52,7 +46,7 @@ namespace task1
             stack.Push(int.Parse(lblNumber.Text));
             if (int.Parse(lblNumber.Text) == _getStartResult)
             {
-                MessageBox.Show("Вы выйграли! Вам понадобилось {0} ходов", ResultCountAllClickButton.Text);
+                MessageBox.Show($"Вы выйграли! Вам понадобилось {ResultCountAllClickButton.Text} ходов");
                 ResultCountAllClickButton.Text = "0";
             }
         }
@@ -66,6 +60,7 @@ namespace task1
             Random rand = new Random();            
             _getStartResult = rand.Next(1, Int32.MaxValue);
             MessageBox.Show($"Получите число {_getStartResult} за минимальное количество ходов");
+            lebelNeedResult.Text = (_getStartResult).ToString();
             ResultCountAllClickButton.Text = "0";
             lblNumber.Text = "1";
             stack.Clear();

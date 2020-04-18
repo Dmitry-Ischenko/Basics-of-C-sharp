@@ -37,6 +37,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.StartGame = new System.Windows.Forms.ToolStripMenuItem();
             this.btnBack = new System.Windows.Forms.Button();
+            this.textNeedResult = new System.Windows.Forms.Label();
+            this.lebelNeedResult = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,11 +127,31 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
+            // textNeedResult
+            // 
+            this.textNeedResult.AutoSize = true;
+            this.textNeedResult.Location = new System.Drawing.Point(8, 24);
+            this.textNeedResult.Name = "textNeedResult";
+            this.textNeedResult.Size = new System.Drawing.Size(60, 13);
+            this.textNeedResult.TabIndex = 8;
+            this.textNeedResult.Text = "Получите: ";
+            // 
+            // lebelNeedResult
+            // 
+            this.lebelNeedResult.AutoSize = true;
+            this.lebelNeedResult.Location = new System.Drawing.Point(74, 24);
+            this.lebelNeedResult.Name = "lebelNeedResult";
+            this.lebelNeedResult.Size = new System.Drawing.Size(13, 13);
+            this.lebelNeedResult.TabIndex = 9;
+            this.lebelNeedResult.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 164);
+            this.Controls.Add(this.lebelNeedResult);
+            this.Controls.Add(this.textNeedResult);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.ResultCountAllClickButton);
             this.Controls.Add(this.textCountAllClickButton);
@@ -145,7 +167,7 @@
             this.MinimumSize = new System.Drawing.Size(318, 203);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "Form1";
+            this.Text = "Игра \"Удвоитель\"";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -165,6 +187,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem StartGame;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label textNeedResult;
+        private System.Windows.Forms.Label lebelNeedResult;
     }
 }
 
