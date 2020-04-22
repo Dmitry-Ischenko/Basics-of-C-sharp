@@ -8,15 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace task2
+namespace task5
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             //Выполнил Ищенко Дмитрий
-            //Создайте простую форму на котором свяжите свойство 
-            //Text элемента TextBox со свойством Value элемента NumericUpDown
+            //**Написать программу - преобразователь из CSV в XML-файл с информацией о студентах(6 урок).
             InitializeComponent();
         }
     }

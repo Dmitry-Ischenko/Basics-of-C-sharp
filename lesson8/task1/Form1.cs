@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,13 +16,16 @@ namespace task1
         public Form1()
         {
             //Выполнил Ищенко Дмитрий
-            //1.а) Создать приложение, показанное на уроке, добавив в него защиту от возможных ошибок
-            //    (не создана база данных, обращение к несуществующему вопросу, открытие слишком большого файла и т.д.).
-            //б) Изменить интерфейс программы, увеличив шрифт, поменяв цвет элементов и добавив другие «косметические» улучшения на свое усмотрение.
-            //в) Добавить в приложение меню «О программе» с информацией о программе(автор, версия, авторские права и др.).
-            //г) Добавить в приложение сообщение с предупреждением при попытке удалить вопрос.
-            //д) Добавить пункт меню Save As, в котором можно выбрать имя для сохранения базы данных(элемент SaveFileDialog).
+            //С помощью рефлексии выведите все свойства структуры DateTime
             InitializeComponent();
+            Type tp = Type.GetType("System.DateTime");
+            PropertyInfo[] propery = tp.GetProperties();
+            int i = 0;
+            foreach (PropertyInfo mi in propery)
+            {
+                i++;
+                listBox1.Items.Add($"Property[{i}] = {mi.Name}");         
+            }
 
         }
     }
