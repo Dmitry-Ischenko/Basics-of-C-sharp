@@ -19,5 +19,18 @@ namespace task2
             //Text элемента TextBox со свойством Value элемента NumericUpDown
             InitializeComponent();
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            int output;
+            if (Int32.TryParse(textBox1.Text,out output)) {
+                if (output >=numericUpDown1.Minimum && output <=numericUpDown1.Maximum) numericUpDown1.Value = output;
+            }
+        }
+
+        private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = numericUpDown1.Value.ToString();
+        }
     }
 }
