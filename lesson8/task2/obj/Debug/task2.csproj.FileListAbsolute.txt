@@ -1,0 +1,9 @@
+D:\github.com\Basics-of-C-sharp\lesson8\task2\bin\Debug\task2.exe.config
+D:\github.com\Basics-of-C-sharp\lesson8\task2\bin\Debug\task2.exe
+D:\github.com\Basics-of-C-sharp\lesson8\task2\bin\Debug\task2.pdb
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.Form1.resources
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.Properties.Resources.resources
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.csproj.GenerateResource.cache
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.exe
+D:\github.com\Basics-of-C-sharp\lesson8\task2\obj\Debug\task2.pdb

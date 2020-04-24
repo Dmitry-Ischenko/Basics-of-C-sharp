@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <TextQuestion>123</TextQuestion>
+    <Answer>true</Answer>
+  </Question>
+  <Question>
+    <TextQuestion>Банки грабят людей!</TextQuestion>
+    <Answer>true</Answer>
+  </Question>
+  <Question>
+    <TextQuestion>Ельцин пидор?</TextQuestion>
+    <Answer>true</Answer>
+  </Question>
+</ArrayOfQuestion>
